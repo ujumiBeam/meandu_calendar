@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/schedule_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/icon_circle_schedule"></ImageView>
+
+    <FrameLayout
+        android:id = "@+id/schedule_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="7">
+
+        <TextView
+            android:id="@+id/schedule_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"
+            android:layout_weight="7"
+            android:visibility="visible"
+            android:text = "일정"></TextView>
+
+        <EditText
+            android:id="@+id/scheduleEdit_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:text="일정 수정">
+
+        </EditText>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/editSch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@null"
+        android:src="@drawable/edit_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/delSch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@null"
+        android:src="@drawable/delete_icon"></ImageButton>
+</LinearLayout>

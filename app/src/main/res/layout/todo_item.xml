@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:button="@drawable/icon_circle_todo_done">
+
+    </CheckBox>
+
+    <FrameLayout
+        android:id="@+id/todoFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/todo_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:text="할 일"
+            android:visibility="visible"
+            android:textSize="15dp"></TextView>
+
+        <EditText
+            android:id="@+id/todoEdit_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:text="할 일 수정"
+            android:visibility="gone"
+            android:textSize="15dp"></EditText>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/editTodo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@null"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/edit_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/delTodo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@null"
+        android:src="@drawable/delete_icon"></ImageButton>
+</LinearLayout>
